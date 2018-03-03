@@ -1,0 +1,20 @@
+{
+  "manifest_version": 2,
+  // "default_locale": "en",
+
+  "name": "capture for kindle dx(g)",
+  "version": "0.1",
+  "description": "capture the web page to png files",
+  "browser_action": {
+    "default_icon": "icon.png"
+  },
+  "background": {
+    //"persistent": false,
+    "page": "background.html"
+  },
+   // inject 脚本需要这个权限
+  "permissions": [
+    "activeTab",
+    "downloads"
+  ]
+}
